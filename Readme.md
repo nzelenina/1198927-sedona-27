@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [наталья](https://up.htmlacademy.ru/htmlcss/27/user/1198927).
-* Наставник: [оксана вайнруб](https://htmlacademy.ru/profile/id166797).
+* Наставник: [ оксана вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
