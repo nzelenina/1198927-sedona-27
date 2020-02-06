@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	padding: 0;
+	/*text-align: center;*/
+	font-family: "PT Sans Bold",Arial,sans-serif;
+}
+a {
+	text-decoration: none;
+	font-size: 14px;
+	color: #000000;
+}
+
+ul {
+	list-style-type: none;
+
+}
+.container {
+	background-image: url("../img/background-photo.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size:  1200px 800px;
+}
+h2{
+	font-size: 30px;
+}
+p {
+	font-size: 21px;
+	color: #000000;
+}
+button  {
+	font-family: "PT Sans Bold",Arial,sans-serif;
+	font-size: 21px;
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+button:hover,
+button:focus {
+	background-color: #669ec0;
+}
+button:active {
+background-color: #5496bd;
+}
+.search  {
+	font-family: "PT Sans Bold",Arial,sans-serif;
+	font-size: 21px;
+	color: #ffffff;
+	background-color: #766357;
+}
+.search:hover,
+.search:focus {
+	background-color: #604e43;
+}
+.search:active {
+	#503e33;
+}
+/*.nav-list {
+}
+.advantage {
+}*/
+.title-first {
+	font-size: 21px;
+	color: white;
+}
+.title-second {
+	font-size: 21px;
+	line-height: 21px;
+}
+.note-first {
+	font-family: "PT Sans Regular",Arial,sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+}
+.note-second {
+	font-family: "PT Sans Regular",Arial,sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+.date-value {
+	font-family: "PT Sans Bold", Arial,sans-serif ;
+	font-size: 14px;
+}
+.tel{
+	font-size: 21px;
+}
+.web{
+	font-family: "PT Sans Regular",Arial,sans-serif;
+	font-size: 14px;
+	color: #000000;
+}
+.web-logo:hover {
+	color: #81b3d2
+}
