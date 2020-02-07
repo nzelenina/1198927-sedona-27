@@ -10,6 +10,21 @@ a {
 	color: #000000;
 }
 
+}
+.inform:visited {
+	color: #766357;
+}
+.inform:hover{
+	
+	color: #light-grey-blu;
+}
+.inform:active {
+
+opacity: 0.3;
+}
+
+
+
 ul {
 	list-style-type: none;
 
@@ -39,6 +54,7 @@ button:focus {
 }
 button:active {
 background-color: #5496bd;
+opacity: 0.3;
 }
 .search  {
 	font-family: "PT Sans Bold",Arial,sans-serif;
@@ -79,6 +95,19 @@ background-color: #5496bd;
 	font-family: "PT Sans Bold", Arial,sans-serif ;
 	font-size: 14px;
 }
+.net {
+	background-color: #81b3d2;
+}
+.net:hover,
+.net:fokus {
+background-color: #669ec0;
+}
+.net:active{
+	background-color: #5496bd;
+}
+.net:active img {
+	opacity: 0.3;
+}
 .tel{
 	font-size: 21px;
 }
@@ -87,6 +116,9 @@ background-color: #5496bd;
 	font-size: 14px;
 	color: #000000;
 }
-.web-logo:hover {
-	color: #81b3d2
+.web-logo:hover path {
+	fill: #81b3d2
+}
+.web-logo: active path{
+	fill:#503e33;
 }
