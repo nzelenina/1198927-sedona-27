@@ -1,8 +1,8 @@
 body {
-	margin: 0;
+	margin: 0 40 0 40;
 	padding: 0;
-	/*text-align: center;*/
 	font-family: "PT Sans Bold",Arial,sans-serif;
+	background-color: rgba(0, 1, 1, 0.2)
 }
 a {
 	text-decoration: none;
@@ -21,6 +21,21 @@ a {
 }
 ul {
 	list-style-type: none;
+}
+nav {
+	padding: 0;
+	height: 56px;
+	text-align: center;
+	background-color: red;
+}
+nav  li{
+	margin: 0;
+	padding: 0;
+	width: 239px;
+	display:inline-block;
+}
+.welcome {
+	margin: 76px;
 }
 .container {
 	background-image: url("../img/background-photo.jpg");
@@ -63,7 +78,30 @@ button:active,
 background-color: #5496bd;
 color: rgba(255, 255, 255, 0.3);
 }
+.inform-sity {
+	
+	margin-top: 0px;
+	margin-left: 40px;
+	padding-top:46px;
+	border: 0;
+	padding-left: 60px;
+	padding-right: 60px; 
+	padding-bottom: 64px;
+	text-align: center;
+	width: 280px;
+	height: 146px;
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+.feature-picture {
+	
+	margin-left: 440px;
+	margin-right: 40px;
 
+}
+.advantage  li{
+display:inline-block;
+}
 .search,
 .booking{
 	font-family: "PT Sans Bold",Arial,sans-serif;
@@ -90,8 +128,17 @@ color: rgba(255, 255, 255, 0.3);
 	color: white;
 }
 .title-second {
+font-size: 21px;
+	color: #000000;	
+} 
+.container-title {
+	margin-top: 507px;
+	padding-left: 420px;
+	width: 440px;
+	height: 48px;
 	font-size: 21px;
 	line-height: 21px;
+	color: #000000;
 }
 .note-first {
 	font-family: "PT Sans Regular",Arial,sans-serif;
@@ -103,6 +150,11 @@ color: rgba(255, 255, 255, 0.3);
 	font-size: 14px;
 	color: #000000;
 }
+.container-section {
+	display: flex;
+	flex-direction: row;
+}
+
 .date-value {
 	border: 0;
 	font-family: "PT Sans Bold", Arial,sans-serif ;
