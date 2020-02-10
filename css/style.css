@@ -2,18 +2,24 @@ body {
 	margin: 0 40 0 40;
 	padding: 0;
 	text-align: center;
-	font-family: "PT Sans Bold",Arial,sans-serif;
+	font-family: "PT Sans ",Arial,sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
+	text-transform: uppercase;
 	background-color: rgba(0, 1, 1, 0.2)
 }
 a { 
  	font-weight: bold;
-	font-family: "PT Sans Bold",Arial,sans-serif;
 	text-decoration: none;
 	font-size: 14px;
 
+	color: #000000;
+}
+h2 {
+	font-size:30 ;
+	font-weight:bold; 
+	line-height: 36;
 	color: #000000;
 }
 .inform-index:visited {
@@ -66,8 +72,8 @@ p {
 button,
 .hotel-inform {
 	border: 0;
-	font-family: "PT Sans Bold",Arial,sans-serif;
 	font-size: 21px;
+	line-height: 26px;
 	color: #ffffff;
 	background-color: #81b3d2;
 }
@@ -86,17 +92,9 @@ background-color: #5496bd;
 color: rgba(255, 255, 255, 0.3);
 }
 .inform-sity {
-	
-	margin-top: 0px;
-	margin-left: 40px;
-	padding-top:46px;
-	border: 0;
-	padding-left: 60px;
-	padding-right: 60px; 
-	padding-bottom: 64px;
-	text-align: center;
-	width: 280px;
-	height: 146px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
 	background-color: #81b3d2;
 	color: #ffffff;
 }
@@ -111,7 +109,8 @@ display:inline-block;
 }
 .search,
 .booking{
-	font-family: "PT Sans Bold",Arial,sans-serif;
+	font-weight: bold;
+	line-height: 26px;
 	font-size: 21px;
 	color: #ffffff;
 	background-color: #766357;
@@ -132,14 +131,16 @@ display:inline-block;
 }
 .title-first {
 	font-size: 21px;
-	color: white;
+	line-height: 21px;
+	color: #ffffff;
 }
 .title-second {
-font-size: 21px;
+	line-height: 26px;
+	font-size: 21px;
 	color: #000000;	
 } 
 .container-title {
-	
+	text-transform: uppercase;
 	font-size: 21px;
 	line-height: 26px;
 	color: #000000;
@@ -150,10 +151,10 @@ font-size: 21px;
 	color: #ffffff;
 }
 .note-second {
-	font-family: "PT Sans Regular",Arial,sans-serif;
-	font-weight: regular;
+	font-weight: normal;
 	font-size: 14px;
-	color: #000000;
+	line-height: 21px;
+	color: #333333;
 }
 .container-section {
 	display: flex;
@@ -162,8 +163,9 @@ font-size: 21px;
 
 .date-value {
 	border: 0;
-	font-family: "PT Sans Bold", Arial,sans-serif ;
+	font-weight: bold;
 	font-size: 14px;
+	line-height: 26px;
 	background-color: #f2f2f2;
 }
 .date-value:hover {
@@ -218,8 +220,9 @@ background-color: #669ec0;
 	font-size: 21px;
 }
 .web{
-	font-family: "PT Sans Regular",Arial,sans-serif;
 	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
 	color: #000000;
 }
 .web-logo:hover path {
