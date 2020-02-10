@@ -1,12 +1,19 @@
 body {
 	margin: 0 40 0 40;
 	padding: 0;
+	text-align: center;
 	font-family: "PT Sans Bold",Arial,sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 26px;
 	background-color: rgba(0, 1, 1, 0.2)
 }
-a {
+a { 
+ 	font-weight: bold;
+	font-family: "PT Sans Bold",Arial,sans-serif;
 	text-decoration: none;
 	font-size: 14px;
+
 	color: #000000;
 }
 .inform-index:visited {
@@ -94,7 +101,7 @@ color: rgba(255, 255, 255, 0.3);
 	color: #ffffff;
 }
 .feature-picture {
-	
+
 	margin-left: 440px;
 	margin-right: 40px;
 
@@ -132,12 +139,9 @@ font-size: 21px;
 	color: #000000;	
 } 
 .container-title {
-	margin-top: 507px;
-	padding-left: 420px;
-	width: 440px;
-	height: 48px;
+	
 	font-size: 21px;
-	line-height: 21px;
+	line-height: 26px;
 	color: #000000;
 }
 .note-first {
@@ -147,6 +151,7 @@ font-size: 21px;
 }
 .note-second {
 	font-family: "PT Sans Regular",Arial,sans-serif;
+	font-weight: regular;
 	font-size: 14px;
 	color: #000000;
 }
