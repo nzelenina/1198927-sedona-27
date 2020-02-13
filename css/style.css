@@ -49,16 +49,21 @@ ul {
 .welcome {
 	margin: 76px;
 }
+.mask {
+	position: absolute;
+}
 .container {
 	width: 1200px;
 	margin: 0 auto;
 }
 figure {
+	margin: 0px;
 	background-image: url("../img/background-photo.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size:  1200px 773px;
-}
+	background-size:1200px 773px;
+	}
+
 .container-inner {
 	background-image: url("../img/filter-background.jpg");
 	background-position: top center;
@@ -71,6 +76,8 @@ p {
 }
 button,
 .hotel-inform {
+	width: 458px;
+	height: 58px;
 	border: 0;
 	font-size: 21px;
 	line-height: 26px;
@@ -177,13 +184,14 @@ color: rgba(255, 255, 255, 0.3);
 .container-section section {
 	width: 400px;
 }
+/*форма ввода дат */
 .date {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
 	margin-left: 316px;
 	width: 568px;
+	height: 458px;
 }
-
 .date-value {
 	border: 0;
 	font-weight: bold;
@@ -207,6 +215,7 @@ color: rgba(255, 255, 255, 0.3);
 .date-calendar:active path{
 	fill: #81b3d2;
 }
+
 .up,
 .down {
 	border: 0;
@@ -224,6 +233,10 @@ color: rgba(255, 255, 255, 0.3);
 	border: 0;
 	background-color: #f2f2f2;
 	color: #81b3d2;
+}
+.net {
+	display: flex;
+	margin-top: 36px;
 }
 .net a {
 	background-color: #81b3d2;
@@ -302,9 +315,11 @@ footer {
 footer div {
 	width: 400px;
 }
-
-
-
+.cub {
+width: 48px;
+height: 46px;
+background-color:#81b3d2;
+}
 /*чекбоксы
 .container-inner input {
 	-webkit-appearance:none;
