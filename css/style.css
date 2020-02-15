@@ -58,11 +58,10 @@ ul {
 }
 figure {
 	margin: 0px;
-	background-image: url("../img/background-photo.jpg");
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-size:1200px 773px;
-	}
+	background-image: url("../img/background-photo.jpg"),url("../img/intro-mask.svg");
+	background-position: 0 100% 0 0;
+	background-repeat: no-repeat, no-repeat;
+}
 p {
 	font-size: 21px;
 	color: #000000;
@@ -124,6 +123,7 @@ color: rgba(255, 255, 255, 0.3);
 	margin-left: 316px;
 	background-color: #766357;
 	width: 568px;
+	margin-bottom: 0;
 }
  .booking {
 	font-size: 14px;
@@ -179,18 +179,30 @@ color: rgba(255, 255, 255, 0.3);
 }
 						/*форма ввода дат */
 .date {
-	/*display: flex;
-	flex-direction: column;*/
+	display: flex;
+	flex-direction: column;
 	margin-left: 316px;
 	width: 568px;
 	height: 395px;
 }
+.date-value-in {
+	margin-top: 55px;
+	margin-bottom: 29px;
+	margin-left: 55px;
+	width: 458px;
+}
+.date-value-out{
+	margin-left: 55px;
+	width: 458px;
+}
+
 .date-value {
 	border: 0;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
 	background-color: #f2f2f2;
+	width: 346px;
 }
 .date-value:hover {
 	border: 0;
@@ -209,14 +221,26 @@ color: rgba(255, 255, 255, 0.3);
 	fill: #81b3d2;
 }
 .date-age {
-	width: 284px;
+	margin-top: 29px;
+	margin-left: 55px;
+	display: flex;
+	width: 458px;
 }
 
+.date-age-old,
+.date-age-child {
+	width: 229px;
+	text-align: left;
+}
+.date-value-age {
+	width: 38px;
+}
 .up,
 .down {
 	border: 0;
 	background-color: #f2f2f2;
 	color: #cacaca;
+	width: 38px;
 }
 .up:hover,
 .down:hover {
@@ -229,6 +253,12 @@ color: rgba(255, 255, 255, 0.3);
 	border: 0;
 	background-color: #f2f2f2;
 	color: #81b3d2;
+}
+.date-button {
+	margin-top: 54px;
+	margin-left: 55px;
+	padding-left: 0;
+	padding-right: 0;
 }
 .net {
 	display: flex;
@@ -255,18 +285,6 @@ background-color: #669ec0;
 }*/
 
 
-.web{
-	font-size: 14px;
-	line-height: 26px;
-	font-weight: normal;
-	color: #000000;
-}
-.web-logo:hover path {
-	fill: #81b3d2;
-}
-.web-logo:active path{
-	fill:#503e33;
-}
 /*                      внутренняя страница*/
 .container-inner-hotel {
 	background-image: url("../img/filter-background.jpg");
@@ -318,21 +336,27 @@ background-color: #669ec0;
 .icon-up:active path{
 	fill: #81b3d2;
 }
-/*footer*/
+				/*footer*/
 footer {
-	width: 1200px;
+	width:1200px;
 	margin: 0 auto;
 	display: flex;
+
 }
 .footer-tel {
-	text-align: left;
 	width: 400px;
+	text-align: left;
+	padding-left: 132px;
 }
+
 .footer-net {
-width: 400px;
+	width: 400px;
+	
+
 }
 .footer-logo {
 	width: 400px;
+
 }
 .tel{
 	font-size: 21px;
@@ -355,3 +379,21 @@ background-color:#81b3d2;
 	background-color: tomato;
 	background-image: url("../img/checkbox-on.svg");
 }*/
+.web{
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+	color: #000000;
+	vertical-align: center;
+}
+.web-logo {
+	vertical-align:center;
+	display: inline-block;
+}
+.web-logo:hover path {
+	fill: #81b3d2;
+}
+.web-logo:active path{
+	fill:#503e33;
+}
