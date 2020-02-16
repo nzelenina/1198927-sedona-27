@@ -222,10 +222,6 @@ color: rgba(255, 255, 255, 0.3);
 	line-height: 26px;
 	background-color: #f2f2f2;
 	width: 346px;
-	position: relative;
-	background-image: url("../img/calendar.svg");
-	background-repeat: no-repeat;
-	background-position: right;
 }
 .date-value:hover {
 	border: 0;
@@ -238,6 +234,9 @@ color: rgba(255, 255, 255, 0.3);
 }
 .date-calendar {
 	position: absolute;
+	left: 483px;
+	bottom: 2px;
+
 }
 .date-calendar path {
 	fill: #cacaca;
@@ -430,6 +429,7 @@ background-color: #669ec0;
 	justify-content: flex-start;
 }
 .description-item2 {
+	display: flex;
    	text-align: right;
 	}
 .description-item1 h3 {
