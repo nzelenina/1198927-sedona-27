@@ -75,18 +75,24 @@ p {
 	font-size: 21px;
 	color: #000000;
 }
-.date-button,
-.hotel-inform {
+.date-button{
 	width: 458px;
 	height: 58px;
 	border: 0;
-	font-size: 21px;
-	line-height: 26px;
+	font-size: 14px;
+	line-height: 21px;
 	color: #ffffff;
 	background-color: #81b3d2;
 }
 .hotel-inform {
 	font-size: 14px;
+	font-weight: bold;
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #81b3d2;
+	width: 110px;
+	height: 30px;
+
 }
 .date-button:hover,
 .date-button:focus,
@@ -216,6 +222,7 @@ color: rgba(255, 255, 255, 0.3);
 	line-height: 26px;
 	background-color: #f2f2f2;
 	width: 346px;
+	position: relative;
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
 	background-position: right;
@@ -228,6 +235,9 @@ color: rgba(255, 255, 255, 0.3);
 	border: 0;
 	background-color: #ffffff;
 	/*border: solid 2px #e5e5e5; не работает*/
+}
+.date-calendar {
+	position: absolute;
 }
 .date-calendar path {
 	fill: #cacaca;
@@ -339,6 +349,7 @@ background-color: #669ec0;
 .type-hotel-list {
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 }
 .container-inner label {
 	color: #ffffff;
@@ -401,20 +412,31 @@ background-color: #669ec0;
 .description {
 	padding-left: 72px;
 }
-
 .description li {
 	display: flex;
 	margin-top: 60px;
 	padding-left: 0;
 	text-align: left;
+
 }
 .description-item1,
 .description-item2 {
 	display: flex;
 	flex-direction: column;
 }
+
+.description-item1 {
+	margin-left: 30px;
+	justify-content: flex-start;
+}
+.description-item2 {
+   	text-align: right;
+	}
 .description-item1 h3 {
 	margin-top: 0;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 
@@ -424,6 +446,7 @@ footer {
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 .footer-tel {
 	width: 400px;
@@ -431,13 +454,17 @@ footer {
 	padding-left: 132px;
 }
 
-.footer-net {
+/*.footer-net {
 	width: 400px;
 	
 
-}
-.footer-logo {
+}*/
+.footer-logo,
+ .footer-net{
+	display: flex;
 	width: 400px;
+	justify-content: center;
+	align-items: center;
 
 }
 .tel{
@@ -449,15 +476,18 @@ footer {
 }
 .container-inner {
 	background-color: #000000;
-}
-.check-box {
+}*/
+/*.type-hotel-check{
 	width: 27px;
 	height: 23px;
-	background-color: tomato;
-	background-image: url("../img/checkbox-on.svg");
+	background-image: url("../img/checkbox-on@2x.png");
 }*/
+.type-hotel-list label {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
 .web{
-	display: inline-block;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
