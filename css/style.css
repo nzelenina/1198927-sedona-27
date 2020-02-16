@@ -44,15 +44,26 @@ ul {
 	list-style-type: none;
 }
 .nav-list {
+
+
 	display: flex;
 	padding-left: 0;
+	justify-content: center;
+
+
 }
+/*.nav-list-item1 {
+	width: 600px;
+	display: flex;
+	
+}*/
 .nav-list li {
-	width: 239px;
+	width: 300px;
 }
-.nav-list-logo {
-	width: 244px;
-	position: relative;
+header img {
+	
+	position: absolute;
+	left: 530px;
 	z-index: 1;
 }
 .welcome {
@@ -427,7 +438,9 @@ background-color: #669ec0;
 	justify-content: flex-start;
 }
 .description-item2 {
-	display: flex;
+	/*background-image: url("../img/invalid-name.svg");
+	background-repeat*/
+	margin-left: auto;
    	text-align: right;
 	}
 .description-item1 h3 {
