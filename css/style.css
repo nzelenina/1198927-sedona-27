@@ -11,13 +11,16 @@ body {
 }
 header {
 	width: 1200px;
+	height: 56px;
 	margin: 0 auto;
+	/*background-image: url("../img/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;*/
 }
 a {
  	font-weight: bold;
 	text-decoration: none;
 	font-size: 14px;
-
 	color: #000000;
 }
 h2 {
@@ -42,9 +45,15 @@ ul {
 }
 .nav-list {
 	display: flex;
+	padding-left: 0;
 }
 .nav-list li {
 	width: 239px;
+}
+.nav-list-logo {
+	width: 244px;
+	position: relative;
+	z-index: 1;
 }
 .welcome {
 	margin: 76px;
@@ -58,9 +67,9 @@ ul {
 }
 figure {
 	margin: 0px;
-	background-image: url("../img/background-photo.jpg"),url("../img/intro-mask.svg");
-	background-position: 0 100% 0 0;
-	background-repeat: no-repeat, no-repeat;
+	background-image: url("../img/intro-mask.svg"),url("../img/background-photo.jpg");
+	background-position: 0 101%, 0 0;
+	background-repeat: no-repeat;
 }
 p {
 	font-size: 21px;
@@ -124,7 +133,8 @@ color: rgba(255, 255, 255, 0.3);
 	background-color: #766357;
 	width: 568px;
 	margin-bottom: 0;
-}
+	
+	}
  .booking {
 	font-size: 14px;
 }
@@ -184,7 +194,10 @@ color: rgba(255, 255, 255, 0.3);
 	margin-left: 316px;
 	width: 568px;
 	height: 395px;
-}
+	background-color: #ffffff;
+	position: absolute;
+	z-index: 1;
+	}
 .date-value-in {
 	margin-top: 55px;
 	margin-bottom: 29px;
@@ -203,6 +216,9 @@ color: rgba(255, 255, 255, 0.3);
 	line-height: 26px;
 	background-color: #f2f2f2;
 	width: 346px;
+	background-image: url("../img/calendar.svg");
+	background-repeat: no-repeat;
+	background-position: right;
 }
 .date-value:hover {
 	border: 0;
@@ -212,6 +228,9 @@ color: rgba(255, 255, 255, 0.3);
 	border: 0;
 	background-color: #ffffff;
 	/*border: solid 2px #e5e5e5; не работает*/
+}
+.date-calendar path {
+	fill: #cacaca;
 }
 .date-calendar:hover  path{
 	fill: #000000;
@@ -260,10 +279,17 @@ color: rgba(255, 255, 255, 0.3);
 	padding-left: 0;
 	padding-right: 0;
 }
+/*.map {
+	position: relative;
+	bottom: 395px;
+}*/  
+
+                         		 /*иконки соцсетей*/
 .net {
 	display: flex;
 	margin-top: 36px;
 }
+
 .net a {
 	background-color: #81b3d2;
 }
@@ -278,14 +304,18 @@ background-color: #669ec0;
 .net a:active img {
 	opacity: 0.3;
 }
-/*.tw{
+.cub img {
+	position: relative;
+	top: 10px;
+}
+.cub {
+	margin-right: 6px;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
-}*/
+}
 
-
-/*                      внутренняя страница*/
+/*                     				 внутренняя страница*/
 .container-inner-hotel {
 	background-image: url("../img/filter-background.jpg");
 	background-position: top center;
@@ -304,44 +334,96 @@ background-color: #669ec0;
 }
 .type-hotel {
 	font-size: 16px;
-	color: #ffffff;class="type-hotel";
+	color: #ffffff;
+}
+.type-hotel-list {
+	display: flex;
+	flex-direction: column;
 }
 .container-inner label {
 	color: #ffffff;
 }
-.list-hotel li {
+                           /*строка найдено*/
+.list-hotel  {
 	display: flex;
+	margin-bottom: 64px;
+	padding-left: 0;
+
 }
-.found {
-	color: rgba(0, 0, 0, 0.3);
-	font-family:"PT Sans Regular",Arial,sans-serif;
+.found-item1 {
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	margin-right: 22px;
+	min-width: 130px;
+}
+.found-item2 {
 	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+
+	margin-right:46px;
+	margin-top: 5px;
 }
-.found:hover,
-.found:focus {
+.found-item3 a {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #81b3d2;
+	margin-right: 10px;
+}
+.found a {
+	color: rgba(0, 0, 0, 0.3);
+	font-weight: normal;
+	line-height: 18px;
+	font-size: 12px;
+	margin-right: 12px;
+}
+.found a:hover,
+.found a:focus {
 	color: #81b3d2;
 }
-.found:active {
+.found a:active {
 	color: #000000;
 }
-.icon-down:hover path{
-	fill: #000000;
+.found-item4 {
+	margin-left: 612px;
 }
+.icon-down:hover path,
 .icon-up:hover path{
 	fill: #000000;
 }
-.icon-down:active path{
-	fill: #81b3d2;
-}
+.icon-down:active path,
 .icon-up:active path{
 	fill: #81b3d2;
 }
+                     /*описание отелей*/
+.description {
+	padding-left: 72px;
+}
+
+.description li {
+	display: flex;
+	margin-top: 60px;
+	padding-left: 0;
+	text-align: left;
+}
+.description-item1,
+.description-item2 {
+	display: flex;
+	flex-direction: column;
+}
+.description-item1 h3 {
+	margin-top: 0;
+}
+
+
 				/*footer*/
 footer {
 	width:1200px;
 	margin: 0 auto;
 	display: flex;
-
+	justify-content: center;
 }
 .footer-tel {
 	width: 400px;
@@ -360,11 +442,6 @@ footer {
 }
 .tel{
 	font-size: 21px;
-}
-.cub {
-width: 48px;
-height: 46px;
-background-color:#81b3d2;
 }
 /*чекбоксы
 .container-inner input {
