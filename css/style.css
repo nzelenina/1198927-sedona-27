@@ -357,9 +357,11 @@ background-color: #669ec0;
 }
                            /*строка найдено*/
 .list-hotel  {
+	width: 1200px;
+	margin: 0 auto;
 	display: flex;
 	margin-bottom: 64px;
-	padding-left: 0;
+	padding-left: 72px;
 
 }
 .found-item1 {
@@ -399,7 +401,8 @@ background-color: #669ec0;
 	color: #000000;
 }
 .found-item4 {
-	margin-left: 612px;
+	margin-right: 0;
+	margin-left: auto;
 }
 .icon-down:hover path,
 .icon-up:hover path{
@@ -478,6 +481,9 @@ footer {
 .tel{
 	margin-left: 132px;
 	font-size: 21px;
+}
+.footer-logo svg {
+	margin-top: 12px;
 }
 /*чекбоксы
 .container-inner input {
