@@ -44,26 +44,17 @@ ul {
 	list-style-type: none;
 }
 .nav-list {
-
-
 	display: flex;
 	padding-left: 0;
 	justify-content: center;
-
-
 }
-/*.nav-list-item1 {
-	width: 600px;
-	display: flex;
-	
-}*/
 .nav-list li {
 	width: 300px;
 }
-header img {
-	
+.logo {
 	position: absolute;
-	left: 530px;
+	left:601px;
+
 	z-index: 1;
 }
 .welcome {
@@ -305,7 +296,7 @@ color: rgba(255, 255, 255, 0.3);
                          		 /*иконки соцсетей*/
 .net {
 	display: flex;
-	margin-top: 36px;
+ justify-content: center;
 }
 
 .net a {
@@ -455,28 +446,25 @@ background-color: #669ec0;
 footer {
 	width:1200px;
 	margin: 0 auto;
+	height: 120px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .footer-tel {
+	margin: 0 auto;
 	width: 400px;
-	text-align: left;
-	padding-left: 132px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;	
+	align-items: center;
 }
-
-/*.footer-net {
-	width: 400px;
-	
-
-}*/
 .footer-logo,
  .footer-net{
+ 	width: 400px;
 	display: flex;
-	width: 400px;
 	justify-content: center;
 	align-items: center;
-
 }
 .tel{
 	font-size: 21px;
