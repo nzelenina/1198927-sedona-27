@@ -451,6 +451,7 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding:36px 0;
 }
 .footer-tel {
 	width: 400px;
@@ -468,12 +469,14 @@ footer {
 }
 .title-second-footer {
 	margin-top: 0;
+	margin-left: 132px;
 	margin-bottom: 16px;
 	line-height: 26px;
 	font-size: 21px;
 	color:#000000;
 } 
 .tel{
+	margin-left: 132px;
 	font-size: 21px;
 }
 /*чекбоксы
