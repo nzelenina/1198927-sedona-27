@@ -447,7 +447,7 @@ background-color: #669ec0;
 				/*footer*/
 footer {
 	width:1200px;
-	height: 120px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -456,12 +456,11 @@ footer {
 	width: 400px;
 	display: flex;
 	flex-direction: column;
-	text-align: left;
-	justify-content: center;	
-	align-items: center;
-}
+	justify-content: center;
+	align-items: flex-start;
+	}
 .footer-logo,
- .footer-net{
+.footer-net {
  	width: 400px;
 	display: flex;
 	justify-content: center;
@@ -469,15 +468,13 @@ footer {
 }
 .title-second-footer {
 	margin-top: 0;
+	margin-bottom: 16px;
 	line-height: 26px;
 	font-size: 21px;
-	color: #000000;
+	color:#000000;
 } 
 .tel{
 	font-size: 21px;
-}
-.web {
-	margin: 0;
 }
 /*чекбоксы
 .container-inner input {
@@ -501,11 +498,7 @@ footer {
 	line-height: 26px;
 	font-weight: normal;
 	color: #000000;
-	vertical-align: center;
-}
-.web-logo {
-	vertical-align:center;
-	display: inline-block;
+	
 }
 .web-logo:hover path {
 	fill: #81b3d2;
