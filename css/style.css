@@ -298,6 +298,7 @@ color: rgba(255, 255, 255, 0.3);
 	display: flex;
  justify-content: center;
  padding: 0;
+ margin: 0;
 }
 
 .net a {
@@ -446,17 +447,16 @@ background-color: #669ec0;
 				/*footer*/
 footer {
 	width:1200px;
-	margin: 0 auto;
 	height: 120px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .footer-tel {
-	margin: 0 auto;
 	width: 400px;
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 	justify-content: center;	
 	align-items: center;
 }
@@ -467,8 +467,17 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+.title-second-footer {
+	margin-top: 0;
+	line-height: 26px;
+	font-size: 21px;
+	color: #000000;
+} 
 .tel{
 	font-size: 21px;
+}
+.web {
+	margin: 0;
 }
 /*чекбоксы
 .container-inner input {
