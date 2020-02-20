@@ -16,9 +16,7 @@
           <li>
             <a href="#">ФОТО И ВИДЕО</a>
           </li>
-          
-            <img src="img/logo.png" alt="logo" width="140px" height="71px">
-          
+              <img src="img/logo.png" alt="logo" width="140px" height="71px">
           <li>
             <a href="#">КАРТА ШТАТА</a>
           </li>
@@ -30,42 +28,62 @@
 	 	<main class="container-inner">
    		<form  class="container-inner-hotel" action="#" method="post">
         <div class="type-hotel-list">
-          <p class="type-hotel">инфроструктура:</p>
-          <div>
-          <input  type="checkbox"  checked>
-          <label>бассейн</label>
-        </div>
-        <div>
-          <input type="checkbox" checked>
-          <label>парковка</label>
-        </div>
-        <div>
-          <input type="checkbox">
-          <label>wi-fi</label>
-        </div>
+                  <p class="type-hotel">инфроструктура:</p>
+                  <div>
+                  <label class="type-hotel-label">
+                    <input  type="checkbox" class="visually-hidden"   checked>
+                  <span class="checkbox-indicator"></span>
+                  бассейн</label>
+                </div>
+                <div>
+                   <label class="type-hotel-label">
+                  <input type="checkbox" class="visually-hidden" checked>
+                  <span class="checkbox-indicator"></span>
+                  парковка</label>
+                </div>
+                <div>
+                  <label class="type-hotel-label">
+                  <input type="checkbox" class="visually-hidden" checked>
+                  <span class="checkbox-indicator"></span>
+                  wi-fi</label>
+                </div>
         </div>
         <div class="type-hotel-list">
-          <p class="type-hotel">тип жилья:</p>
-          <div>
-          <input type="checkbox" checked>
-          <label>гостиницы</label>
+              <p class="type-hotel">тип жилья:</p>
+              <div>
+                <label class="type-hotel-label">
+                <input type="checkbox" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                гостиницы</label>
+              </div>
+              <div>
+                <label class="type-hotel-label">
+                <input type="checkbox" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                мотель</label>
+              </div>
+               <div>
+                <label class="type-hotel-label">
+                <input type="checkbox" class="visually-hidden" checked>
+                <span class="checkbox-indicator"></span>
+                аппартаменты</label>
+              </div>
         </div>
-        <div>
-          <input type="checkbox" checked>
-          <label>мотель</label>
-        </div>
-        <div>
-          <input type="checkbox" checked>
-          <label>аппартаменты</label>
-        </div>
-        </div>
-        <div>
-          <p class="type-hotel">Стоимость в сутки (Р):</p>
-          <input type="text" name="number" value="от 0">
-           <input type="text" name="number" value="до 3000">
-          <input type="range"  min="0" max="3000">
-          <button type="submit">показать</button>
-        </div>
+        <div class="filter-range">
+                <p class="type-hotel">Стоимость в сутки (Р):</p>
+                <div class="price-control">
+                    <label class="min-price" >от <input type="number" name="min-price" value="0"></label>
+                    <label class="max-price" >до <input type="number" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-control">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                     <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                    <button   class="btn-transparent" type="submit">показать</button>
+          </div>
    		</form>
    	    <ul class="list-hotel">
           <li class="found-item1">

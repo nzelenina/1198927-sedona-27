@@ -13,7 +13,6 @@ header {
 	width: 1200px;
 	height: 56px;
 	margin: 0 auto;
-
 }
 a {
  	font-weight: bold;
@@ -178,7 +177,7 @@ color: rgba(255, 255, 255, 0.3);
 	color: #000000;	
 } 
 .container-title {
-	margin-top: 140px;
+	margin-top: 51px;
 	margin-bottom: 38px;
 	text-transform: uppercase;
 	font-size: 21px;
@@ -341,29 +340,118 @@ background-color: #669ec0;
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size:  1200px 562px;
-	height: 217px;
+	
 	display: flex;
+	width: 1200px;
+	margin: 0 auto;
 }
 
 .container-inner {
 	width:1200px;
 	margin: 0 auto;
 }
-.container-inner-hotel  div {
+/*.container-inner-hotel  div {
 	width: 400px;
-}
+}*/
 .type-hotel {
 	font-size: 16px;
 	color: #ffffff;
+	
 }
 .type-hotel-list {
+	margin-top: 31px;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	text-align: left;
+	width: 326px;
 }
+.filter-range {
+	width:330px;
+	text-align: left;
+	margin-left: auto;
+	margin-right: 74px;
+}
+
 .container-inner label {
 	color: #ffffff;
 }
+							  /*чекбоксы*/
+.type-hotel-list label {
+	display: block;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	margin-left:72px;
+	margin-bottom: 36px;
+	padding-left: 40px;
+}
+.visually-hidden {
+	display: none;
+}
+.type-hotel-label {
+	position: relative;
+	padding-left: 30px;
+	cursor: pointer;
+}
+ .type-hotel-label input[type="checkbox"] + .checkbox-indicator {
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+	width: 27px;
+	height: 23px;
+	background-image: url("../img/checkbox-on.png");
+}
+
+                        /*сложный фильтр*/
+      /*блок управления*/
+.price-control {
+	position: relative;
+	border: 2px solid #ffffff;
+	margin-bottom: 20px;
+	border-radius: 2px;
+	height: 36px;
+
+}
+.price-control::after {
+	content: " ";
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 2px;
+	height: 22px;
+	background: #ffffff;
+}
+.price-control label {
+	display: inline-block;
+	vertical-align: top;
+	line-height: 38px;
+	cursor: pointer;
+}
+.price-control .min-price,
+.price-control .max-price {
+	padding-left: 65px;
+	width: 90px;
+}
+.price-control input {
+	background: none;
+	border: none;
+	color: inherit;
+	font: inherit; 
+	margin: 0;
+	width: 50px;
+} 
+       /* ползунки*/ 
+ .range-control {
+ 	position: relative;
+ 	margin-bottom: 32px;
+ } 
+ .range-control .scale {
+ 	height: 2px;
+ 	background: rgba(0, 1, 1, 0.2);
+ }                         
+
                            /*строка найдено*/
 .list-hotel  {
 	width: 1200px;
@@ -493,23 +581,7 @@ footer {
 .footer-logo svg {
 	margin-top: 12px;
 }
-/*чекбоксы
-.container-inner input {
-	-webkit-appearance:none;
-}
-.container-inner {
-	background-color: #000000;
-}*/
-/*.type-hotel-check{
-	width: 27px;
-	height: 23px;
-	background-image: url("../img/checkbox-on@2x.png");
-}*/
-.type-hotel-list label {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: normal;
-}
+
 .web{
 	font-size: 14px;
 	line-height: 26px;
