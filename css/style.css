@@ -46,11 +46,12 @@ ul {
 	display: flex;
 	position: relative;
 	padding-left: 0;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 .nav-list li {
 	width: 239px;
 }
+
 
 .logo {
 	z-index: 1;
@@ -516,6 +517,7 @@ background-color: #669ec0;
 	color: #000000;
 }
 .found-item4 {
+
 	margin-right: 0;
 	margin-left: auto;
 }
