@@ -45,16 +45,13 @@ ul {
 	margin: 0 auto;
 	display: flex;
 	position: relative;
-	bottom:70px;
 	padding-left: 0;
 	justify-content: space-between;
 }
 .nav-list li {
 	width: 239px;
 }
-.nav-list-item {
-	display: flex;
-}
+
 .logo {
 	z-index: 1;
 }
@@ -450,7 +447,29 @@ background-color: #669ec0;
  .range-control .scale {
  	height: 2px;
  	background: rgba(0, 1, 1, 0.2);
- }                         
+ } 
+ .range-control .bar {
+ 	height: 2px;
+ 	width: 80%;
+ 	background: #ffffff;
+ } 
+ .range-toggle {
+ 	width: 4px;
+ 	height: 4px;
+ 	border: 8px solid #ffffff;
+ 	border-radius: 50%;
+ 	position: absolute;
+ 	top: -9px;
+ 	cursor: pointer;
+ }
+ .range-toggle-min {
+ 	left: 0;
+ }
+ .range-toggle-max {
+ 	left: 80%;
+ } 
+       /*кнопка*/
+.btn-transparent {}
 
                            /*строка найдено*/
 .list-hotel  {
