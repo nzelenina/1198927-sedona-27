@@ -45,15 +45,32 @@ ul {
 	margin: 0 auto;
 	display: flex;
 	position: relative;
+	bottom: 70px;
 	padding-left: 0;
-	/*justify-content: space-between;*/
+	
 }
 .nav-list li {
 	width: 239px;
 }
-
+.nav-list-item1 {
+	margin-left: 72px;
+	text-align: left;
+}
+.nav-list-item2 {
+	text-align: left;
+}
+.nav-list-item3 {
+	margin-left: auto;
+	text-align: right;
+}
+.nav-list-item4 {
+	margin-right: 72px;
+	text-align: right;
+}
 
 .logo {
+	position: absolute;
+	left: calc(50% - 69px);
 	z-index: 1;
 }
 												/*картика*/
@@ -76,25 +93,6 @@ figure {
 p {
 	font-size: 21px;
 	color: #000000;
-}
-.date-button{
-	width: 458px;
-	height: 58px;
-	border: 0;
-	font-size: 14px;
-	line-height: 21px;
-	color: #ffffff;
-	background-color: #81b3d2;
-}
-.hotel-inform {
-	font-size: 14px;
-	font-weight: bold;
-	line-height: 21px;
-	color: #ffffff;
-	background-color: #81b3d2;
-	width: 110px;
-	height: 30px;
-
 }
 .date-button:hover,
 .date-button:focus,
@@ -133,7 +131,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 
 .search a,
-.booking{
+{
 	font-weight: bold;
 	line-height: 26px;
 	font-size: 21px;
@@ -223,13 +221,20 @@ color: rgba(255, 255, 255, 0.3);
 	width: 458px;
 }
 
-.date-value {
-	border: 0;
+
+.date-value-in label {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
+	
+}
+.date-value {
+	border: 0;
+	font: inherit;
+	text-transform: uppercase;
 	background-color: #f2f2f2;
 	width: 346px;
+	height: 38px;
 }
 .date-value:hover {
 	border: 0;
@@ -242,6 +247,7 @@ color: rgba(255, 255, 255, 0.3);
 }
 .date-calendar {
 	position: absolute;
+
 	left: 483px;
 }
 .date-calendar path {
@@ -289,10 +295,16 @@ color: rgba(255, 255, 255, 0.3);
 	color: #81b3d2;
 }
 .date-button {
+	width: 458px;
+	height: 58px;
+	border: 0;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #81b3d2;
 	margin-top: 54px;
 	margin-left: 55px;
-	padding-left: 0;
-	padding-right: 0;
 }
 /*.map {
 	position: relative;
@@ -474,8 +486,8 @@ background-color: #669ec0;
 
                            /*строка найдено*/
 .list-hotel  {
-	width: 1200px;
-	margin: 0 auto;
+	/*width: 1200px;
+	margin: 0 auto;*/
 	display: flex;
 	margin-bottom: 64px;
 	padding-left: 72px;
@@ -518,7 +530,7 @@ background-color: #669ec0;
 }
 .found-item4 {
 
-	margin-right: 0;
+	margin-right: 72px;
 	margin-left: auto;
 }
 .icon-down:hover path,
@@ -534,6 +546,7 @@ background-color: #669ec0;
 	padding-left: 72px;
 }
 .description li {
+
 	display: flex;
 	margin-top: 60px;
 	padding-left: 0;
@@ -557,11 +570,37 @@ background-color: #669ec0;
    	text-align: right;
 	}
 .description-item1 h3 {
+
 	margin-top: 0;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
 }
+.description-item-search {
+	display: flex;
+}
+.hotel-inform {
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 21px;
+	color: #ffffff;
+	background-color: #81b3d2;
+	width: 110px;
+	height: 27px;
+}
+.booking {
+	display: block;
+	font-weight: bold;
+	line-height: 21px;
+	font-size: 14px;
+	color: #ffffff;
+	margin-left: 6px;
+	width: 142px;
+	height: 27px;
+	background-color: #766357;
+}
+
 
 
 				/*footer*/
@@ -577,9 +616,8 @@ footer {
 	width: 400px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-	}
+	text-align: left;
+}
 .footer-logo,
 .footer-net {
  	width: 400px;
@@ -587,7 +625,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
-.title-second-footer {
+ .footer-tel h3 {
 	margin-top: 0;
 	margin-left: 132px;
 	margin-bottom: 16px;
