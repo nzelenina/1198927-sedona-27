@@ -7,8 +7,7 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	background-color: #eeeeee;
-}
+	}
 header {
 	width: 1200px;
 	height: 56px;
@@ -105,6 +104,7 @@ p {
 background-color: #5496bd;
 color: rgba(255, 255, 255, 0.3);
 }
+                          /* городок и мост*/
 .inform-bridge,
 .inform-city {
  	display: flex;
@@ -112,46 +112,65 @@ color: rgba(255, 255, 255, 0.3);
  .inform-bridge section,
  .inform-city section {
 	width: 400px;
+	background-color: #81b3d2;
+}
+.title-first {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-top: 49px;
+}
+
+.inform-par,
+.inform-span {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	background-color: #81b3d2;
 	color: #ffffff;
 }
+.inform-par {
+	margin-bottom: 64px;
+}
+                          /*преимущества*/
 .advantage {
+	width: 1200px;
 	display:flex;
+	padding-left: 0;
+	margin-top: 60px;
+	margin-bottom: 0;
 }
 .advantage li {
-	display: flex;
-	flex-direction: column;
+	/*display: flex;
+	flex-direction: column;*/
 	width: 400px;
-	justify-content: center;
-	align-items: center;
+
+
+	/*justify-content: center;
+	align-items: center;*/
+	text-align: center;
 
 }
 
-.search a,
-{
+.search  {
+	display: block;
 	font-weight: bold;
 	line-height: 26px;
 	font-size: 21px;
 	color: #ffffff;
+	width: 568px;
 	background-color: #766357;
-}
-.search {
 	padding-top: 36px;
 	padding-bottom: 31px;
 	margin-left: 316px;
 	background-color: #766357;
 	width: 568px;
 	margin-bottom: 0;
-	
-	}
+}
  .booking {
 	font-size: 14px;
 }
-.search a:hover,
-.search a:focus,
+.search:hover,
+.search:focus,
 .booking:hover,
 .booking:focus {
 	background-color: #604e43;
@@ -161,13 +180,8 @@ color: rgba(255, 255, 255, 0.3);
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
-.title-first {
-	font-size: 21px;
-	line-height: 21px;
-	color: #ffffff;
-}
 .title-second {
-	margin-top: 50px;
+	margin: 29px 0px 31px;
 	line-height: 26px;
 	font-size: 21px;
 	color: #000000;	
@@ -186,7 +200,7 @@ color: rgba(255, 255, 255, 0.3);
 	color: #ffffff;
 }
 .note-second {
-	margin-bottom: 56px;
+	margin: 0px 0px 56px;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
@@ -195,9 +209,12 @@ color: rgba(255, 255, 255, 0.3);
 .container-section {
 	display: flex;
 	flex-direction: row;
+	min-height: 256px;
+	background-color: #eeeeee;
 }
 .container-section section {
 	width: 400px;
+	background-color: #eeeeee;
 }
 						/*форма ввода дат */
 .date {
@@ -215,9 +232,11 @@ color: rgba(255, 255, 255, 0.3);
 	margin-bottom: 29px;
 	margin-left: 55px;
 	width: 458px;
+	position: relative;
 }
 .date-value-out{
 	margin-left: 55px;
+	position: relative;
 	width: 458px;
 }
 
@@ -247,8 +266,8 @@ color: rgba(255, 255, 255, 0.3);
 }
 .date-calendar {
 	position: absolute;
-
-	left: 483px;
+	top: 9px;
+	left: 428px;
 }
 .date-calendar path {
 	fill: #cacaca;
@@ -264,23 +283,39 @@ color: rgba(255, 255, 255, 0.3);
 	margin-top: 29px;
 	margin-left: 55px;
 	display: flex;
+
 	width: 458px;
+
 }
 
 .date-age-old,
 .date-age-child {
+	
 	width: 229px;
 	text-align: left;
 }
+.date-age-child {
+	text-align: right;
+}
 .date-value-age {
 	width: 38px;
+	height: 38px;
+	border: 0;
+	background-color: inherit;
+}
+.date-age-btn {
+	display: flex;
+	width: 114px;
+	background-color: #f2f2f2;
 }
 .up,
 .down {
-	border: 0;
-	background-color: #f2f2f2;
+	border: 0px;
+	
 	color: #cacaca;
 	width: 38px;
+	height: 38px;
+	padding: 0px;
 }
 .up:hover,
 .down:hover {

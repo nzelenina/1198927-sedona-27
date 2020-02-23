@@ -9,7 +9,6 @@
   </head>
   <body>
   	<header>
-
    			<a href="#"><img src="img/logo.png" alt="logo" width="140px" height="71px"></a>
    			<ul class="nav-list">
    		  		<li class="nav-list-item1">   		  		 
@@ -38,8 +37,8 @@
    		<div class="inform-city">
    		<section >
   				<h3 class="title-first">Настоящий <br>городок</h3>
-				<span>— №1 —</span><br>
-				Седона — не аттракцион для туристов,<br> там течёт своя жизнь
+				<span class="inform-span" >— №1 —</span><br>
+				<p class="inform-par">Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
    		</section>
   		  		<img  class="feature-picture" src="img/feature-picture.jpg" alt="feature-picture" width="800" height="256">
   		 </div>
@@ -64,8 +63,8 @@
 				<img src="img/layer-5.jpg" alt="layer_5" width="800" height="256">
 		<section>
 			<h3 class="title-first">Там есть <br>Мост дьявола</h3>
-				<span>— №2 —</span><br>
-				Да, по нему можно пройти! Если конечно вы осмелитесь
+				<span class="inform-span" >— №2 —</span><br>
+				<p class="inform-par">Да, по нему можно пройти! Если конечно <br>вы осмелитесь</p>
 		</section>
 		</div>
 		<div class="container-section">		
@@ -98,11 +97,10 @@
 			<p class="note-second">Укажите предполагаемые даты поездки,<br>
 			и мы покажем вам лучшие предложения гостиниц в седоне
 			</p>
-
-			<p class="search">
-			<a href="#">поиск гостиницы в седоне</a>
-			</p>
-		<div>
+			<a class="search" href="#">поиск гостиницы в седоне</a>
+			
+		<div class="modal modal-show">
+		 
 			<form  class="date" action="#" method="post">
 			<div class="date-value-in">
 				<label>дата заезда:</label>
@@ -123,15 +121,19 @@
 		<div class="date-age">
 			<div class="date-age-old">
 				<label>взрослые:</label>
+				<div class="date-age-btn">
 				<button class="down">-</button>
 				<input  class="date-value-age" type="text" name="number" value="2">
 				<button class="up">+</button>
 			</div>
+			</div>
 			<div class="date-age-child">
 				<label>дети:</label>
+				<div class="date-age-btn" >
 				<button class="down">-</button>
 				<input  class="date-value-age" type="text" name="number" value="1">
 				<button class="up">+</button>
+			</div>
 			</div>
 		</div>
 			<button class="date-button" type="submit">найти</button>
