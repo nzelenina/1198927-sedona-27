@@ -1,5 +1,5 @@
 body {
-	margin: 0 40 0 40;
+	margin: 0 40px 0 40px;
 	padding: 0;
 	text-align: center;
 	font-family: "PT Sans ",Arial,sans-serif;
@@ -7,20 +7,26 @@ body {
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	box-shadow: 2px 0 10px 0 rgba(0,1,1,0.2),-2px 0 10px 0 rgba(0,1,1,0.2);
+	background-color: #f2f2f2;
 	}
 header {
 	width: 1200px;
 	height: 56px;
 	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
 }
 .container {
-	box-shadow: 2px 0 10px 0 rgba(0,1,1,0.2),-2px 0 10px 0 rgba(0,1,1,0.2);
+	display: block;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 15px 0 rgba(0,1,1,0.2);
 }
 a {
- 	font-weight: bold;
+ 	/*font-weight: bold;*/
 	text-decoration: none;
-	font-size: 14px;
+	/*font-size: 14px;
+	line-height: 21px*/
 	color: #000000;
 }
 h2 {
@@ -33,10 +39,10 @@ h2 {
 .inform-index:visited {
 	color: #766357;
 }
-.inform:hover{
+.inform-index:hover{
 	color: #81b3d2;
 }
-.inform:active {
+.inform-index:active {
 	color: rgba(0, 0, 0, 0.3);
 }
 ul {
@@ -100,7 +106,7 @@ p {
 .date-button:hover,
 .date-button:focus,
 .hotel-inform:hover,
-.hotel-inform:fokus {
+.hotel-inform:focus {
 	background-color: #669ec0;
 }
 .date-button:active,
@@ -109,8 +115,41 @@ background-color: #5496bd;
 color: rgba(255, 255, 255, 0.3);
 }
                           /* городок и мост*/
+/*.inform-bridge,
+.inform-city {
+-ms-text-align:center; 		
+ 		
+ 	-ms-margin-left:40px;
+ 	display: flex;
+ }
+ .inform-bridge section,
+ .inform-city section {
+	width: 400px;
+	background-color: #81b3d2;
+}
+.title-first {
+	font-size: 21px;
+	line-height: 21px;
+	color: #ffffff;
+	margin-top: 49px;
+}
+
+.inform-par,
+.inform-span {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+}
+.inform-par {
+	margin-bottom: 64px;
+}*/
 .inform-bridge,
 .inform-city {
+
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
+
  	display: flex;
  }
  .inform-bridge section,
@@ -256,7 +295,8 @@ color: rgba(255, 255, 255, 0.3);
 	font: inherit;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
-	width: 346px;
+	padding-left: 13px;
+	width: 333px;
 	height: 38px;
 }
 .date-value:hover {
@@ -266,7 +306,6 @@ color: rgba(255, 255, 255, 0.3);
 .date-value:focus {
 	border: 0;
 	background-color: #ffffff;
-	/*border: solid 2px #e5e5e5; не работает*/
 }
 .date-calendar {
 	position: absolute;
@@ -303,9 +342,11 @@ color: rgba(255, 255, 255, 0.3);
 	
 }
 .date-value-age {
+	text-align: center;
 	width: 38px;
 	height: 38px;
 	border: 0;
+	font: inherit;
 	background-color: inherit;
 }
 .date-age-btn {
@@ -319,6 +360,8 @@ color: rgba(255, 255, 255, 0.3);
 .down {
 	border: 0px;
 	color: #cacaca;
+	font-size: 24px;
+	font-weight: bold;
 	width: 38px;
 	height: 38px;
 	padding: 0px;
@@ -348,10 +391,6 @@ color: rgba(255, 255, 255, 0.3);
 	margin-left: 55px;
 	padding: 0px;
 }
-/*.map {
-	position: relative;
-	bottom: 395px;
-}*/  
 
                          		 /*иконки соцсетей*/
 .net {
@@ -365,7 +404,7 @@ color: rgba(255, 255, 255, 0.3);
 	background-color: #81b3d2;
 }
 .net a:hover,
-.net a:fokus {
+.net a:focus {
 background-color: #669ec0;
 }
 .net a:active{
@@ -376,8 +415,7 @@ background-color: #669ec0;
 	opacity: 0.3;
 }
 .cub img {
-	position: relative;
-	top: 10px;
+	margin-top: 15px;
 }
 .cub {
 	margin-right: 6px;
@@ -392,19 +430,18 @@ background-color: #669ec0;
 	background-position: bottom center;
 	background-repeat: no-repeat;
 	background-size:  1200px 562px;
-	
 	display: flex;
 	width: 1200px;
 	margin: 0 auto;
 }
 
 .container-inner {
+	display: block;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 	width:1200px;
 	margin: 0 auto;
+	background-color: #ffffff;
 }
-/*.container-inner-hotel  div {
-	width: 400px;
-}*/                   
                                  /*чекбоксы*/
 .type-hotel {
 	font-size: 16px;
@@ -454,7 +491,8 @@ background-color: #669ec0;
  	left: 0;
 	width: 27px;
 	height: 23px;
-	background-image: url("../img/checkbox-on.png");
+	
+
 }
  .type-hotel-label input[type="checkbox"] + .checkbox-indicator-off {
  	position: absolute;
@@ -462,8 +500,11 @@ background-color: #669ec0;
  	left: 0;
 	width: 27px;
 	height: 23px;
-	background-image: url("../img/checkbox-off-2.png");
+	/*background-image: url("../img/checkbox-off-2.png");*/
 	background-repeat: no-repeat;
+}
+.checkbox-indicator-off:disabled path {
+	fill: #6a6a6a;
 }
 
 
@@ -482,6 +523,8 @@ background-color: #669ec0;
 	position: absolute;
 	top:50%;
 	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	  -ms-transform: translate(-50%,-50%);
 	transform: translate(-50%,-50%);
 	width: 2px;
 	height: 22px;
@@ -546,6 +589,11 @@ background-color: #669ec0;
 	text-transform: uppercase;
 	border: 2px solid #ffffff;
 	background: transparent;
+	border-radius: 2px;
+}
+.btn-transparent:hover {
+	background-color: #ffffff;
+	color: #000000;
 }
 
                            /*строка найдено*/
@@ -553,9 +601,11 @@ background-color: #669ec0;
 	/*width: 1200px;
 	margin: 0 auto;*/
 	display: flex;
-	margin-bottom: 64px;
+	margin-top: 31px;
+	min-height: 55px;
+	margin-bottom: 33px;
 	padding-left: 72px;
-
+	border-bottom: 1px solid #f2f2f2;
 }
 .found-item1 {
 	font-size: 21px;
@@ -568,7 +618,7 @@ background-color: #669ec0;
 	font-size: 12px;
 	font-weight: normal;
 	line-height: 18px;
-	margin-right:46px;
+	margin-right:66px;
 	margin-top: 5px;
 }
 .found-item3 a {
@@ -576,14 +626,15 @@ background-color: #669ec0;
 	line-height: 18px;
 	font-weight: normal;
 	color: #81b3d2;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 .found a {
+	border-bottom: 1px dashed #f2f2f2;
 	color: rgba(0, 0, 0, 0.3);
 	font-weight: normal;
 	line-height: 18px;
 	font-size: 12px;
-	margin-right: 12px;
+	margin-right: 20px;
 }
 .found a:hover,
 .found a:focus {
@@ -593,7 +644,6 @@ background-color: #669ec0;
 	color: #000000;
 }
 .found-item4 {
-
 	margin-right: 72px;
 	margin-left: auto;
 }
@@ -607,65 +657,98 @@ background-color: #669ec0;
 }
                      /*описание отелей*/
 .description {
-	padding-left: 72px;
+	padding-left: 0px;
+	margin-bottom: 0px;
 }
 .description li {
-
 	display: flex;
-	margin-top: 60px;
-	padding-left: 0;
 	text-align: left;
-
+	margin-top: 30px;
+	padding-left: 72px;
+	border-bottom: 1px solid #f2f2f2;
+}
+.description li img {
+	margin-top: 10px;
 }
 .description-item1,
 .description-item2 {
 	display: flex;
 	flex-direction: column;
+	min-height: 150px;
 }
-
 .description-item1 {
-	margin-left: 30px;
+	margin-left:30px;
 	justify-content: flex-start;
 }
 .description-item2 {
-	/*background-image: url("../img/invalid-name.svg");
-	background-repeat*/
-	margin-left: auto;
-   	text-align: right;
+	   	text-align: right;
+   	margin-right: 72px;
+   	margin-left: auto;
 	}
 .description-item1 h3 {
-
-	margin-top: 0;
-	font-weight: bold;
+   	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+	margin-top: 6px;
+	margin-bottom: 7px;
+}
+.wraphotel {
+	margin-bottom: 7px;
+
+}
+.wraphotel-price1 {
+	margin-left: 47px;
+}
+.wraphotel-price2 {
+	margin-left: 75px;
+	-ms-margin-left:80px;
+}
+.wraphotel-price3 {
+	margin-left: 18px;
+}
+.wraphotel  span {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
 }
 .description-item-search {
 	display: flex;
 }
 .hotel-inform {
 	display: block;
+	text-align: center;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 21px;
 	color: #ffffff;
 	background-color: #81b3d2;
-	width: 110px;
+	width: 130px;
 	height: 27px;
 }
 .booking {
-	display: block;
-	font-weight: bold;
-	line-height: 21px;
-	font-size: 14px;
-	color: #ffffff;
 	margin-left: 6px;
 	width: 142px;
 	height: 27px;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	line-height: 21px;
+	font-size: 14px;
 	background-color: #766357;
+	color: #ffffff;
 }
-
-
+.hotel-rate {
+	margin-top: 32px;
+	width: 110px;
+	height: 27px;
+	display: block;
+	background-color: #f2f2f2;
+	text-align: center;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #666666;
+}
 
 				/*footer*/
 footer {
@@ -675,6 +758,8 @@ footer {
 	justify-content: center;
 	align-items: center;
 	padding:36px 0;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 .footer-tel {
 	width: 400px;
