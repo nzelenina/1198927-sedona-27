@@ -13,7 +13,6 @@ a {
 	text-decoration: none;
 }
 .main-header {
-	position: relative;
 	width: 1200px;
 	height: 56px;
 	margin: 0 auto;
@@ -24,6 +23,7 @@ a {
 	display: block;
 	background-color: #ffffff;
 	box-shadow: 0px 5px 15px 0 rgba(0,1,1,0.2);
+	
 }
 .inform-index {
  	text-decoration: none;
@@ -278,12 +278,10 @@ font-size: 14px;
 .modal-date {
 	display: block;
 }
-.modal-show {
+.modal-close {
 	display: none;
 }
-
 .date {
-
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -297,7 +295,7 @@ font-size: 14px;
 	background-color: #ffffff;
 	position: absolute;
 	z-index: 1;
-	}
+}
 .date-value-in {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -431,6 +429,14 @@ font-size: 14px;
 	margin-left: 55px;
 	padding: 0px;
 }
+.active-map {
+	height: 473px;
+}
+.map {
+	position: relative;
+	bottom: 473px;
+	z-index: -1;
+}
 
 
                          		 /*иконки соцсетей*/
@@ -501,6 +507,7 @@ background-color: #669ec0;
 	margin-top: 31px;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	text-align: left;
 	margin-left: 72px;
 	width: 185px;
@@ -541,10 +548,6 @@ background-color: #669ec0;
 	cursor: pointer;
 }
 
-input[type="checkbox"]:focus + .type-hotel-label{
-	border: 2px solid lightblue;
-}
-
 input[type="checkbox"] + .type-hotel-label::before{
 	content: "";
 	position: absolute;
@@ -555,6 +558,9 @@ input[type="checkbox"] + .type-hotel-label::before{
 	background-image: url("../img/checkbox-off-2.png");
 	background-repeat: no-repeat;
 	opacity: 1;
+}
+input[type="checkbox"]:focus + .type-hotel-label {
+	outline: rgb(59,153,252) auto 5px;
 }
 input[type="checkbox"]:checked + .type-hotel-label::before{
 	content: "";
@@ -589,6 +595,7 @@ input[type="checkbox"]:checked:disabled + .type-hotel-label::before{
 		background-repeat: no-repeat;
 
 }
+
 
                        /*сложный фильтр*/
       /*блок управления*/
@@ -748,6 +755,7 @@ input[type="checkbox"]:checked:disabled + .type-hotel-label::before{
 }
 .description li {
 	display: flex;
+	flex-wrap: wrap;
 	text-align: left;
 	margin-top: 30px;
 	padding-left: 72px;
@@ -767,7 +775,7 @@ input[type="checkbox"]:checked:disabled + .type-hotel-label::before{
 	justify-content: flex-start;
 }
 .description-item2 {
-	   	text-align: right;
+	text-align: right;
    	margin-right: 72px;
    	margin-left: auto;
 	}
@@ -780,7 +788,6 @@ input[type="checkbox"]:checked:disabled + .type-hotel-label::before{
 }
 .wraphotel {
 	margin-bottom: 7px;
-
 }
 .wraphotel-price1 {
 	margin-left: 47px;
@@ -867,6 +874,7 @@ input[type="checkbox"]:checked:disabled + .type-hotel-label::before{
 .footer-net {
  	width: 400px;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 }

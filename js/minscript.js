@@ -1,0 +1,1 @@
+var link=document.querySelector(".date-button"),wind=document.querySelector(".modal-date"),popup=document.querySelector(".search");link.addEventListener("click",function(e){e.preventDefault(),wind.classList.add("modal-close")}),popup.addEventListener("click",function(e){e.preventDefault(),wind.classList.remove("modal-close")});

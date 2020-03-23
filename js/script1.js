@@ -1,8 +1,17 @@
-var link = document.querySelector(".date-button");
+var link = document.querySelector (".date-button");
 		
-		var popup = document.querySelector(".modal-date");
+		var wind = document.querySelector (".modal-date");
+		var popup = document.querySelector (".search");
 		
-		link.addEventListener("click" , function (evt) {
+		link.addEventListener ("click" , function (evt) {
 		evt.preventDefault();
-		popup.classList.add("modal-show");
+		wind.classList.add ("modal-close");
+	});
+	popup.addEventListener ("click", function (evt){
+			evt.preventDefault();
+			wind.classList.remove ("modal-close");
+			
+			
+			
+		
 	});

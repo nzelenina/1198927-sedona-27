@@ -4,8 +4,8 @@
 	<meta charset="UTF-8">
 	<title>hotel</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet"  href="css/normalize.css">
-    <link rel="stylesheet"  href="css/style.css">
+    <link  href="css/normalize.css" rel="stylesheet">
+    <link  href="css/minstyle.css" rel="stylesheet">
   </head>
 <body>
       <header class="main-header">
@@ -26,45 +26,36 @@
       </ul>
      </header>
    	<main class="container-inner">
-   		<form  class="container-inner-hotel" action="#" method="post">
+   		<form  class="container-inner-hotel" action="echo.htmlacademy.ru" method="post">
         <h3 class="visually-hidden">фильтр выбора жилья</h3>
         <ul class="type-hotel-list" >
               <li class="type-hotel">инфроструктура:</li>
                   <li>
                   <input  id="bath" type="checkbox" class="visually-hidden" checked name="0" >
-                  <label for="bath" class="type-hotel-label" > 
-                  бассейн</label>
+                  <label for="bath" class="type-hotel-label">бассейн</label>
                   </li>
                   <li>
                  <input type="checkbox" class="visually-hidden" id="park" tabindex="0">
-                  <label class="type-hotel-label" for="park">
-                  парковка</label>
+                  <label class="type-hotel-label" for="park">парковка</label>
                 </li>
                 <li>
                   <input type="checkbox" class="visually-hidden" disabled id="wif" tabindex="0">
-                  <label class="type-hotel-label" for="wif">
-                    wi-fi</label>
+                  <label class="type-hotel-label" for="wif"> wi-fi</label>
                 </li>
         </ul>
         <ul class="type-hotel-list">
               <li class="type-hotel">тип жилья:</li>
               <li >
                  <input type="checkbox" class="visually-hidden" checked disabled id="hotel-checkbox" tabindex="0">
-                <label class="type-hotel-label" for="hotel-checkbox">
-                
-                гостиницы</label>
+                <label class="type-hotel-label" for="hotel-checkbox">гостиницы</label>
               </li>
               <li >
                  <input type="checkbox" class="visually-hidden" checked id="motel-checkbox" tabindex="0">
-                <label class="type-hotel-label" for="motel-checkbox">
-                
-                мотель</label>
+                <label class="type-hotel-label" for="motel-checkbox">мотель</label>
               </li>
               <li>
                  <input type="checkbox" class="visually-hidden" checked id="appart" tabindex="0">
-                <label class="type-hotel-label" for="appart">
-                
-                аппартаменты</label>
+                <label class="type-hotel-label" for="appart">аппартаменты</label>
               </li>
         </ul>
                     <div class="filter-range">
